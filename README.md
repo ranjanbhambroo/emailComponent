@@ -32,8 +32,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## List of Changes
 
  Break the Auto suggest dropdown into its own component.
+
  Write more robust tests to test the app properly.
+ 
  Use SASS for styling.
+ 
  Use Typescript instead of javascript.
 
 ## Suggestions
