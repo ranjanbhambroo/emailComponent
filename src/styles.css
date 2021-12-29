@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  font-family: SF Pro Text;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebebeb;
+  font-family: SF Pro Text;
+}
+
+.emails {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  min-height: 48px;
+  width: 480px;
+  padding: 12px;
+  background: #fdfdfd;
+  /* //border: 1px solid rgb(214, 216, 218); */
+  border-radius: 6px;
+}
+
+.email {
+  width: auto;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ededed;
+  mix-blend-mode: normal;
+  font-size: 14px;
+  border-radius: 6px;
+  list-style: none;
+  margin: 0 8px 8px 0;
+  padding: 0 8px;
+}
+
+.email-content {
+  display: flex;
+  font-size: 14px;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 18px;
+  height: 18px;
+  align-items: center;
+  letter-spacing: -0.32px;
+  color: #1a1818;
+}
+
+.email-error {
+  width: auto;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3b7bd;
+  mix-blend-mode: normal;
+  font-size: 14px;
+  border-radius: 6px;
+  list-style: none;
+  margin: 0 8px 8px 0;
+  padding: 0 8px;
+}
+
+.remove-icon {
+  display: block;
+  width: 15px;
+  height: 15px;
+  flex: none;
+  text-align: center;
+  flex-grow: 0;
+  margin: 0px 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.emailDropDown {
+  display: inline-block;
+  border-radius: 4px;
+  background: #fff;
+  border-top-width: 0;
+  margin-top: 0;
+  margin-left: 10px;
+  height: 250px;
+  overflow-y: auto;
+  padding-left: 0;
+  width: 200px;
+}
+
+.emailDropDown li {
+  padding: 8px;
+}
+
+.emailDropDown > .active,
+.emailDropDown li:hover {
+  background-color: #eff5f9;
+  cursor: pointer;
+  font-weight: 700;
+  width: 200px;
+}
+/* .emailDropDown li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
+} */
+
+input {
+  height: 49.47px;
+  background: #fdfdfd;
+  border-radius: 8px;
+  border: none;
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#emailTags {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+@media screen and (max-width: 567px) {
+  .emails {
+    width: calc(100vw - 32px);
+  }
+}
